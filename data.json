@@ -15,9 +15,42 @@
     {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "THB", "pending": true}
   ],
   "trades": [
-    {"date": "2026-04-18", "action": "BUY", "ticker": "BTC", "price": 76165, "quantity": 0.00253, "reason": "Crypto entry - cycle bottom signal"},
-    {"date": "2026-04-18", "action": "BUY", "ticker": "SOL", "price": 86.78, "quantity": 2.22, "reason": "Ecosystem growth play"},
-    {"date": "2026-04-18", "action": "BUY", "ticker": "ETH", "price": 2356.55, "quantity": 0.057, "reason": "Smart contract leader - undervalued relative to BTC"}
+    {
+      "date": "2026-04-18",
+      "action": "BUY",
+      "ticker": "BTC",
+      "price": 76165,
+      "quantity": 0.00253,
+      "reason": "Cycle bottom signal",
+      "thesis": "Digital gold, institutional adoption growing, 21M supply cap. RHODL ratio suggests cycle bottom is in. Iran/Hormuz de-escalation lifting risk-on sentiment. BTC bounced from $74K support and held 200-day MA.",
+      "confidence": "Medium-High",
+      "target": 85000,
+      "stopLoss": 72000
+    },
+    {
+      "date": "2026-04-18",
+      "action": "BUY",
+      "ticker": "SOL",
+      "price": 86.78,
+      "quantity": 2.22,
+      "reason": "Ecosystem growth + breakout",
+      "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue. Wrapped XRP launched on Solana expanding cross-chain liquidity. Outperforming majors with 8% weekly gain, breaking out of consolidation.",
+      "confidence": "Medium",
+      "target": 110,
+      "stopLoss": 75
+    },
+    {
+      "date": "2026-04-18",
+      "action": "BUY",
+      "ticker": "ETH",
+      "price": 2356.55,
+      "quantity": 0.057,
+      "reason": "Undervalued vs BTC + mean reversion",
+      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive. Largest smart contract platform trading at discount to fundamentals.",
+      "confidence": "Medium",
+      "target": 2800,
+      "stopLoss": 2100
+    }
   ],
   "cash": 0,
   "notes": "Stock entries lock in at Monday April 21 open",

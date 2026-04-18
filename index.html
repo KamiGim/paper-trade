@@ -46,6 +46,14 @@ tr:last-child td{border-bottom:none}
 .trade-ticker{font-weight:600;min-width:48px}
 .trade-price{color:var(--text2);min-width:80px}
 .trade-reason{flex:1;color:var(--text2);font-style:italic}
+.trade-thesis{margin:4px 0 8px;padding:10px 12px;background:rgba(108,92,231,0.08);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:.82em;line-height:1.5}
+.trade-thesis .label{font-weight:600;color:var(--accent2);margin-right:4px}
+.trade-thesis .thesis-text{color:var(--text);display:block;margin:4px 0}
+.trade-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;font-size:.78em}
+.trade-meta span{padding:2px 8px;border-radius:10px;background:rgba(108,92,231,0.15)}
+.trade-meta .confidence{color:var(--accent2)}
+.trade-meta .target{color:var(--green)}
+.trade-meta .stop{color:var(--red)}
 .notes{text-align:center;color:var(--text2);font-style:italic;padding:8px;font-size:.9em}
 canvas{width:100%!important;max-height:200px}
 .loading{text-align:center;padding:40px;color:var(--text2)}
@@ -174,9 +182,13 @@ function render() {
   ).join('');
 
   // Trades
-  document.getElementById('trades').innerHTML = [...data.trades].reverse().map(t =>
-    `<div class="trade"><span class="trade-date">${t.date}</span><span class="trade-action ${t.action.toLowerCase()}">${t.action}</span><span class="trade-ticker">${t.ticker}</span><span class="trade-price">@ $${fmt(t.price)}</span><span class="trade-reason">${t.reason}</span></div>`
-  ).join('');
+  document.getElementById('trades').innerHTML = [...data.trades].reverse().map(t => {
+    let thesisHtml = '';
+    if (t.thesis) {
+      thesisHtml = `<div class="trade-thesis"><span class="thesis-text">${t.thesis}</span>${t.confidence || t.target || t.stopLoss ? `<div class="trade-meta">${t.confidence ? `<span class="confidence">🎯 ${t.confidence}</span>` : ''}${t.target ? `<span class="target">📈 Target: $${fmt(t.target)}</span>` : ''}${t.stopLoss ? `<span class="stop">🛑 Stop: $${fmt(t.stopLoss)}</span>` : ''}</div>` : ''}</div>`;
+    }
+    return `<div class="trade" style="flex-wrap:wrap"><span class="trade-date">${t.date}</span><span class="trade-action ${t.action.toLowerCase()}">${t.action}</span><span class="trade-ticker">${t.ticker}</span><span class="trade-price">@ $${fmt(t.price)}</span><span class="trade-reason">${t.reason}</span>${thesisHtml}</div>`;
+  }).join('');
 
   // Cash
   if (data.cash > 0) {
