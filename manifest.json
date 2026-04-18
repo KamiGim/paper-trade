@@ -1,0 +1,12 @@
+{
+  "name": "Paper Trade Portfolio",
+  "short_name": "PaperTrade",
+  "start_url": "/paper-trade/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#6c5ce7",
+  "description": "Gim's Paper Trade Portfolio Dashboard",
+  "icons": [
+    {"src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}

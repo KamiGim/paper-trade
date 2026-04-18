@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gim's Paper Trade Portfolio</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6c5ce7">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f0f1a;--card:#1a1a2e;--border:#2a2a4a;--text:#e0e0e0;--text2:#8888aa;
+  --green:#00d2a0;--red:#ff4757;--accent:#6c5ce7;--accent2:#a29bfe;
+  --shadow:0 4px 20px rgba(0,0,0,0.3);
+}
+.light{
+  --bg:#f0f0f5;--card:#fff;--border:#ddd;--text:#222;--text2:#666;
+  --shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s}
+.wrap{max-width:800px;margin:0 auto;padding:16px}
+header{text-align:center;padding:24px 0 16px}
+header h1{font-size:1.4em;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.total{font-size:2em;font-weight:800;margin:8px 0 2px}
+.pnl-pos{color:var(--green)}.pnl-neg{color:var(--red)}.pnl-zero{color:var(--text2)}
+.updated{font-size:.8em;color:var(--text2)}
+.toggle{position:fixed;top:12px;right:12px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:1.2em;display:flex;align-items:center;justify-content:center;z-index:99;transition:all .3s}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:16px 0;box-shadow:var(--shadow);transition:background .3s,border .3s}
+.card h2{font-size:1.1em;margin-bottom:12px;color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:.85em}
+th{text-align:left;color:var(--text2);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--border)}
+td{padding:8px;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+.pending-row{opacity:.5;font-style:italic}
+.flag{font-size:1.1em}
+.alloc-bar{display:flex;height:28px;border-radius:14px;overflow:hidden;margin:12px 0}
+.alloc-seg{display:flex;align-items:center;justify-content:center;font-size:.7em;font-weight:700;color:#fff;transition:width .3s}
+.alloc-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.85em;margin-top:8px}
+.alloc-legend span::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.trade{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85em}
+.trade:last-child{border-bottom:none}
+.trade-date{color:var(--text2);min-width:80px}
+.trade-action{font-weight:700;min-width:36px}
+.trade-action.buy{color:var(--green)}.trade-action.sell{color:var(--red)}
+.trade-ticker{font-weight:600;min-width:48px}
+.trade-price{color:var(--text2);min-width:80px}
+.trade-reason{flex:1;color:var(--text2);font-style:italic}
+.notes{text-align:center;color:var(--text2);font-style:italic;padding:8px;font-size:.9em}
+canvas{width:100%!important;max-height:200px}
+.loading{text-align:center;padding:40px;color:var(--text2)}
+@media(max-width:480px){
+  .wrap{padding:8px}
+  header h1{font-size:1.2em}
+  .total{font-size:1.6em}
+  table{font-size:.75em}
+  td,th{padding:4px 4px}
+  .hide-mobile{display:none}
+}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+<div class="wrap">
+  <header>
+    <h1>📈 Gim's Paper Trade Portfolio</h1>
+    <div class="total" id="totalValue">--</div>
+    <div id="totalPnl" class="pnl-zero">--</div>
+    <div class="updated" id="lastUpdated">Loading...</div>
+  </header>
+
+  <div class="card">
+    <h2>💼 Holdings</h2>
+    <table><thead><tr><th>Ticker</th><th class="hide-mobile">Name</th><th>Qty</th><th>Entry</th><th>Current</th><th>P&L</th></tr></thead><tbody id="holdings"></tbody></table>
+  </div>
+
+  <div class="card">
+    <h2>📊 Sector Allocation</h2>
+    <div class="alloc-bar" id="allocBar"></div>
+    <div class="alloc-legend" id="allocLegend"></div>
+  </div>
+
+  <div class="card">
+    <h2>📉 Performance</h2>
+    <canvas id="perfChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h2>📋 Trade History</h2>
+    <div id="trades"></div>
+  </div>
+
+  <div class="card" id="cashCard" style="display:none">
+    <h2>💰 Cash Balance</h2>
+    <div id="cashBal" style="font-size:1.4em;font-weight:700"></div>
+  </div>
+
+  <div class="notes" id="notes"></div>
+</div>
+
+<script>
+let data, chart;
+
+async function init() {
+  try {
+    const r = await fetch('data.json?' + Date.now());
+    data = await r.json();
+  } catch(e) {
+    document.getElementById('lastUpdated').textContent = 'Failed to load data.json';
+    return;
+  }
+  render();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+}
+
+function fmt(n, d=2) { return n.toLocaleString('en-US', {minimumFractionDigits:d, maximumFractionDigits:d}); }
+function toTHB(val, cur) { return cur === 'USD' ? val * data.usdRate : val; }
+function sectorFlag(s) { return s === 'US' ? '🇺🇸' : s === 'TH' ? '🇹🇭' : '🪙'; }
+
+function render() {
+  // Header
+  let totalVal = data.cash || 0;
+  let totalCost = data.cash || 0;
+  data.holdings.forEach(h => {
+    const costTHB = toTHB((h.shares || h.amount || 0) * h.entryPrice, h.currency);
+    const curTHB = toTHB((h.shares || h.amount || 0) * (h.currentPrice || 0), h.currency);
+    totalVal += curTHB;
+    totalCost += costTHB;
+  });
+  const pnl = totalVal - data.capital;
+  const pnlPct = (pnl / data.capital * 100);
+
+  document.getElementById('totalValue').textContent = '฿' + fmt(totalVal, 0);
+  const pnlEl = document.getElementById('totalPnl');
+  pnlEl.textContent = (pnl >= 0 ? '+' : '') + '฿' + fmt(Math.abs(pnl), 0) + ' (' + (pnl >= 0 ? '+' : '') + fmt(pnlPct, 2) + '%)';
+  pnlEl.className = pnl > 0 ? 'pnl-pos' : pnl < 0 ? 'pnl-neg' : 'pnl-zero';
+
+  const d = new Date(data.lastUpdated);
+  document.getElementById('lastUpdated').textContent = 'Updated ' + d.toLocaleString('en-GB', {timeZone:'Asia/Bangkok',day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}) + ' ICT';
+
+  // Holdings
+  const tbody = document.getElementById('holdings');
+  tbody.innerHTML = data.holdings.map(h => {
+    const qty = h.shares || h.amount || 0;
+    const costTHB = toTHB(qty * h.entryPrice, h.currency);
+    const curTHB = toTHB(qty * (h.currentPrice || 0), h.currency);
+    const p = curTHB - costTHB;
+    const pp = costTHB > 0 ? (p / costTHB * 100) : 0;
+    const cls = h.pending ? 'pending-row' : '';
+    const pcls = p > 0 ? 'pnl-pos' : p < 0 ? 'pnl-neg' : 'pnl-zero';
+    const pStr = h.pending ? 'Pending' : `<span class="${pcls}">${p >= 0 ? '+' : ''}฿${fmt(Math.abs(p),0)} (${p >= 0 ? '+' : ''}${fmt(pp,1)}%)</span>`;
+    return `<tr class="${cls}"><td>${sectorFlag(h.sector)} ${h.ticker}</td><td class="hide-mobile">${h.name}</td><td>${h.pending ? 'TBD' : (h.amount ? h.amount : h.shares)}</td><td>${h.entryPrice ? (h.currency === 'THB' ? '฿' : '$') + fmt(h.entryPrice) : 'TBD'}</td><td>${h.currentPrice ? (h.currency === 'THB' ? '฿' : '$') + fmt(h.currentPrice) : 'TBD'}</td><td>${pStr}</td></tr>`;
+  }).join('');
+
+  // Sector allocation
+  const sectors = {};
+  data.holdings.forEach(h => {
+    const qty = h.shares || h.amount || 0;
+    const val = toTHB(qty * (h.currentPrice || h.entryPrice || 0), h.currency);
+    sectors[h.sector] = (sectors[h.sector] || 0) + val;
+  });
+  if (data.cash > 0) sectors['Cash'] = data.cash;
+  const total = Object.values(sectors).reduce((a,b) => a+b, 0);
+  const colors = {US:'#6c5ce7',TH:'#00d2a0',Crypto:'#f39c12',Cash:'#8888aa'};
+  const labels = {US:'US Stocks 🇺🇸',TH:'Thai Stocks 🇹🇭',Crypto:'Crypto 🪙',Cash:'Cash 💰'};
+
+  document.getElementById('allocBar').innerHTML = Object.entries(sectors).map(([k,v]) => {
+    const pct = v/total*100;
+    return pct > 0 ? `<div class="alloc-seg" style="width:${pct}%;background:${colors[k]||'#888'}">${pct >= 10 ? fmt(pct,0)+'%':''}</div>` : '';
+  }).join('');
+
+  document.getElementById('allocLegend').innerHTML = Object.entries(sectors).map(([k,v]) =>
+    `<span style="color:var(--text)"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${colors[k]||'#888'};margin-right:4px"></span>${labels[k]||k}: ฿${fmt(v,0)} (${fmt(v/total*100,1)}%)</span>`
+  ).join('');
+
+  // Trades
+  document.getElementById('trades').innerHTML = [...data.trades].reverse().map(t =>
+    `<div class="trade"><span class="trade-date">${t.date}</span><span class="trade-action ${t.action.toLowerCase()}">${t.action}</span><span class="trade-ticker">${t.ticker}</span><span class="trade-price">@ $${fmt(t.price)}</span><span class="trade-reason">${t.reason}</span></div>`
+  ).join('');
+
+  // Cash
+  if (data.cash > 0) {
+    document.getElementById('cashCard').style.display = '';
+    document.getElementById('cashBal').textContent = '฿' + fmt(data.cash, 0);
+  }
+
+  // Notes
+  if (data.notes) document.getElementById('notes').textContent = '📌 ' + data.notes;
+
+  // Chart
+  renderChart(totalVal);
+}
+
+function renderChart(currentVal) {
+  const history = data.history || [];
+  const labels = history.map(h => h.date);
+  const values = history.map(h => h.value);
+
+  // Add current live value
+  const today = new Date().toISOString().slice(0,10);
+  if (!labels.length || labels[labels.length-1] !== today) {
+    labels.push(today);
+    values.push(currentVal);
+  }
+
+  const ctx = document.getElementById('perfChart').getContext('2d');
+  if (chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        borderColor: '#6c5ce7',
+        backgroundColor: 'rgba(108,92,231,0.1)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 3,
+        pointBackgroundColor: '#6c5ce7',
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {legend:{display:false},tooltip:{callbacks:{label:c=>'฿'+c.raw.toLocaleString()}}},
+      scales: {
+        x:{ticks:{color:'#8888aa',font:{size:10}},grid:{color:'rgba(255,255,255,0.05)'}},
+        y:{ticks:{color:'#8888aa',font:{size:10},callback:v=>'฿'+(v/1000).toFixed(0)+'k'},grid:{color:'rgba(255,255,255,0.05)'}}
+      }
+    }
+  });
+}
+
+function toggleTheme() {
+  const light = document.body.classList.toggle('light');
+  document.querySelector('.toggle').textContent = light ? '☀️' : '🌙';
+  localStorage.setItem('theme', light ? 'light' : 'dark');
+}
+
+if (localStorage.getItem('theme') === 'light') toggleTheme();
+init();
+</script>
+</body>
+</html>
