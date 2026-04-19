@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-18T14:11:00Z",
+  "lastUpdated": "2026-04-19T03:02:00Z",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 34.5,
+  "usdRate": 31.98,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.00253, "entryPrice": 76165, "currentPrice": 76165, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 2.22, "entryPrice": 86.78, "currentPrice": 86.78, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.057, "entryPrice": 2356.55, "currentPrice": 2356.55, "currency": "USD"},
+    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.00253, "entryPrice": 76165, "currentPrice": 75519, "currency": "USD"},
+    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 2.22, "entryPrice": 86.78, "currentPrice": 85.55, "currency": "USD"},
+    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.057, "entryPrice": 2356.55, "currentPrice": 2339.58, "currency": "USD"},
     {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
