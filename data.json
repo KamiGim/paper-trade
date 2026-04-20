@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-19T03:02:00Z",
+  "lastUpdated": "2026-04-20T02:01:00Z",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 31.98,
+  "usdRate": 32.06,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.00253, "entryPrice": 76165, "currentPrice": 75519, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 2.22, "entryPrice": 86.78, "currentPrice": 85.55, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.057, "entryPrice": 2356.55, "currentPrice": 2339.58, "currency": "USD"},
+    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 74623, "currency": "USD"},
+    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 84.42, "currency": "USD"},
+    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2287.19, "currency": "USD"},
     {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
@@ -20,7 +20,7 @@
       "action": "BUY",
       "ticker": "BTC",
       "price": 76165,
-      "quantity": 0.00253,
+      "quantity": 0.004778,
       "reason": "Cycle bottom signal",
       "thesis": "Digital gold, institutional adoption growing, 21M supply cap. RHODL ratio suggests cycle bottom is in. Iran/Hormuz de-escalation lifting risk-on sentiment. BTC bounced from $74K support and held 200-day MA.",
       "confidence": "Medium-High",
@@ -32,7 +32,7 @@
       "action": "BUY",
       "ticker": "SOL",
       "price": 86.78,
-      "quantity": 2.22,
+      "quantity": 4.1934,
       "reason": "Ecosystem growth + breakout",
       "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue. Wrapped XRP launched on Solana expanding cross-chain liquidity. Outperforming majors with 8% weekly gain, breaking out of consolidation.",
       "confidence": "Medium",
@@ -44,7 +44,7 @@
       "action": "BUY",
       "ticker": "ETH",
       "price": 2356.55,
-      "quantity": 0.057,
+      "quantity": 0.154421,
       "reason": "Undervalued vs BTC + mean reversion",
       "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive. Largest smart contract platform trading at discount to fundamentals.",
       "confidence": "Medium",
@@ -53,8 +53,9 @@
     }
   ],
   "cash": 0,
-  "notes": "Stock entries lock in at Monday April 21 open",
+  "notes": "Stock entries lock in at Monday April 21 open. Fixed crypto amounts to match 35K THB allocation.",
   "history": [
-    {"date": "2026-04-18", "value": 100000}
+    {"date": "2026-04-18", "value": 100000},
+    {"date": "2026-04-20", "value": 99103}
   ]
 }
