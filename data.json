@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-20T02:01:00Z",
+  "lastUpdated": "2026-04-20T10:00:00Z",
   "capital": 100000,
   "currency": "THB",
   "usdRate": 32.06,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 74623, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 84.42, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2287.19, "currency": "USD"},
+    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 75079, "currency": "USD"},
+    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 85.07, "currency": "USD"},
+    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2309.67, "currency": "USD"},
     {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
     {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
@@ -56,6 +56,7 @@
   "notes": "Stock entries lock in at Monday April 21 open. Fixed crypto amounts to match 35K THB allocation.",
   "history": [
     {"date": "2026-04-18", "value": 100000},
-    {"date": "2026-04-20", "value": 99103}
+    {"date": "2026-04-20", "value": 99103},
+    {"date": "2026-04-20", "value": 99356}
   ]
 }
