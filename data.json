@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-04-20T10:00:00Z",
+  "lastUpdated": "2026-04-21T10:00:00Z",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.06,
+  "usdRate": 32.07616141,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 75079, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 85.07, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2309.67, "currency": "USD"},
-    {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
-    {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
-    {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "USD", "pending": true},
-    {"ticker": "BDMS", "name": "Bangkok Dusit Medical", "sector": "TH", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "THB", "pending": true},
-    {"ticker": "AOT", "name": "Airports of Thailand", "sector": "TH", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "THB", "pending": true},
-    {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 0, "entryPrice": 0, "currentPrice": 0, "currency": "THB", "pending": true}
+    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 76374, "currency": "USD"},
+    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 85.87, "currency": "USD"},
+    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2326.07, "currency": "USD"},
+    {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 1.33, "entryPrice": 820, "currentPrice": 825, "currency": "USD", "pending": false},
+    {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0.85, "entryPrice": 340, "currentPrice": 342, "currency": "USD", "pending": false},
+    {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0.84, "entryPrice": 420, "currentPrice": 422, "currency": "USD", "pending": false},
+    {"ticker": "BDMS", "name": "Bangkok Dusit Medical", "sector": "TH", "shares": 40, "entryPrice": 250, "currentPrice": 252, "currency": "THB", "pending": false},
+    {"ticker": "AOT", "name": "Airports of Thailand", "sector": "TH", "shares": 50, "entryPrice": 200, "currentPrice": 201, "currency": "THB", "pending": false},
+    {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 125, "entryPrice": 80, "currentPrice": 81, "currency": "THB", "pending": false}
   ],
   "trades": [
     {
@@ -57,6 +57,7 @@
   "history": [
     {"date": "2026-04-18", "value": 100000},
     {"date": "2026-04-20", "value": 99103},
-    {"date": "2026-04-20", "value": 99356}
+    {"date": "2026-04-20", "value": 99356},
+    {"date": "2026-04-21", "value": 120892}
   ]
 }
