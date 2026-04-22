@@ -1,18 +1,96 @@
 {
-  "lastUpdated": "2026-04-22T02:00:00Z",
+  "lastUpdated": "2026-04-22T02:23:00Z",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.21,
+  "usdRate": 32.09,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 76324, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 86.32, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2323.50, "currency": "USD"},
-    {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 1.792, "entryPrice": 202.13, "currentPrice": 199.88, "currency": "USD", "pending": false},
-    {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0.862, "entryPrice": 420.24, "currentPrice": 424.16, "currency": "USD", "pending": false},
-    {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0.862, "entryPrice": 420.40, "currentPrice": 420.70, "currency": "USD", "pending": false},
-    {"ticker": "BDMS", "name": "Bangkok Dusit Medical", "sector": "TH", "shares": 40, "entryPrice": 250, "currentPrice": 250, "currency": "THB", "pending": false},
-    {"ticker": "AOT", "name": "Airports of Thailand", "sector": "TH", "shares": 50, "entryPrice": 200, "currentPrice": 200, "currency": "THB", "pending": false},
-    {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 125, "entryPrice": 80, "currentPrice": 80, "currency": "THB", "pending": false}
+    {
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "sector": "Crypto",
+      "amount": 0.004778,
+      "entryPrice": 76165,
+      "currentPrice": 77040,
+      "currency": "USD"
+    },
+    {
+      "ticker": "SOL",
+      "name": "Solana",
+      "sector": "Crypto",
+      "amount": 4.1934,
+      "entryPrice": 86.78,
+      "currentPrice": 86.95,
+      "currency": "USD"
+    },
+    {
+      "ticker": "ETH",
+      "name": "Ethereum",
+      "sector": "Crypto",
+      "amount": 0.154421,
+      "entryPrice": 2356.55,
+      "currentPrice": 2345.98,
+      "currency": "USD"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "sector": "US",
+      "shares": 1.792,
+      "entryPrice": 202.13,
+      "currentPrice": 199.88,
+      "currency": "USD",
+      "pending": false
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "sector": "US",
+      "shares": 0.862,
+      "entryPrice": 420.24,
+      "currentPrice": 424.16,
+      "currency": "USD",
+      "pending": false
+    },
+    {
+      "ticker": "SOXX",
+      "name": "iShares Semiconductor ETF",
+      "sector": "US",
+      "shares": 0.862,
+      "entryPrice": 420.4,
+      "currentPrice": 420.7,
+      "currency": "USD",
+      "pending": false
+    },
+    {
+      "ticker": "BDMS",
+      "name": "Bangkok Dusit Medical",
+      "sector": "TH",
+      "shares": 40,
+      "entryPrice": 250,
+      "currentPrice": 250,
+      "currency": "THB",
+      "pending": false
+    },
+    {
+      "ticker": "AOT",
+      "name": "Airports of Thailand",
+      "sector": "TH",
+      "shares": 50,
+      "entryPrice": 200,
+      "currentPrice": 200,
+      "currency": "THB",
+      "pending": false
+    },
+    {
+      "ticker": "CPALL",
+      "name": "CP ALL",
+      "sector": "TH",
+      "shares": 125,
+      "entryPrice": 80,
+      "currentPrice": 80,
+      "currency": "THB",
+      "pending": false
+    }
   ],
   "trades": [
     {
@@ -46,7 +124,7 @@
       "price": 2356.55,
       "quantity": 0.154421,
       "reason": "Undervalued vs BTC + mean reversion",
-      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
+      "thesis": "ETH/BTC ratio at multi-year lows \u2014 historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
       "confidence": "Medium",
       "target": 2800,
       "stopLoss": 2100
@@ -79,7 +157,7 @@
       "date": "2026-04-21",
       "action": "BUY",
       "ticker": "SOXX",
-      "price": 420.40,
+      "price": 420.4,
       "quantity": 0.862,
       "reason": "Semi ETF basket",
       "thesis": "Diversified semi exposure (NVDA, AVGO, AMD, etc.). Benefits from AI capex cycle without single-name risk. Near 52-week highs showing momentum.",
@@ -127,8 +205,21 @@
   "cash": 0,
   "notes": "Entry prices corrected to real market data on April 22. US stocks at April 21 open. Thai stocks kept at approximate SET levels (price feed unavailable).",
   "history": [
-    {"date": "2026-04-18", "value": 100000},
-    {"date": "2026-04-21", "value": 99903},
-    {"date": "2026-04-22", "value": 99951}
+    {
+      "date": "2026-04-18",
+      "value": 100000
+    },
+    {
+      "date": "2026-04-21",
+      "value": 99903
+    },
+    {
+      "date": "2026-04-22",
+      "value": 99951
+    },
+    {
+      "date": "2026-04-22",
+      "value": 100002
+    }
   ]
 }
