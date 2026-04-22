@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-22T02:23:00Z",
+  "lastUpdated": "2026-04-22T10:02:28.331165",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.09,
+  "usdRate": 32.15,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,7 +10,7 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 77040,
+      "currentPrice": 78027,
       "currency": "USD"
     },
     {
@@ -19,7 +19,7 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 86.95,
+      "currentPrice": 88.33,
       "currency": "USD"
     },
     {
@@ -28,7 +28,7 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2345.98,
+      "currentPrice": 2387.54,
       "currency": "USD"
     },
     {
@@ -37,7 +37,7 @@
       "sector": "US",
       "shares": 1.792,
       "entryPrice": 202.13,
-      "currentPrice": 199.88,
+      "currentPrice": 197.5,
       "currency": "USD",
       "pending": false
     },
@@ -47,7 +47,7 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.24,
-      "currentPrice": 424.16,
+      "currentPrice": 426.0,
       "currency": "USD",
       "pending": false
     },
@@ -57,7 +57,7 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.4,
-      "currentPrice": 420.7,
+      "currentPrice": 419.0,
       "currency": "USD",
       "pending": false
     },
@@ -220,6 +220,10 @@
     {
       "date": "2026-04-22",
       "value": 100002
+    },
+    {
+      "date": "2026-04-22",
+      "value": 100543.93
     }
   ]
 }
