@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-04-21T10:00:00Z",
+  "lastUpdated": "2026-04-22T02:00:00Z",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.07616141,
+  "usdRate": 32.21,
   "holdings": [
-    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 76374, "currency": "USD"},
-    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 85.87, "currency": "USD"},
-    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2326.07, "currency": "USD"},
-    {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 1.33, "entryPrice": 820, "currentPrice": 825, "currency": "USD", "pending": false},
-    {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0.85, "entryPrice": 340, "currentPrice": 342, "currency": "USD", "pending": false},
-    {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0.84, "entryPrice": 420, "currentPrice": 422, "currency": "USD", "pending": false},
-    {"ticker": "BDMS", "name": "Bangkok Dusit Medical", "sector": "TH", "shares": 40, "entryPrice": 250, "currentPrice": 252, "currency": "THB", "pending": false},
-    {"ticker": "AOT", "name": "Airports of Thailand", "sector": "TH", "shares": 50, "entryPrice": 200, "currentPrice": 201, "currency": "THB", "pending": false},
-    {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 125, "entryPrice": 80, "currentPrice": 81, "currency": "THB", "pending": false}
+    {"ticker": "BTC", "name": "Bitcoin", "sector": "Crypto", "amount": 0.004778, "entryPrice": 76165, "currentPrice": 76324, "currency": "USD"},
+    {"ticker": "SOL", "name": "Solana", "sector": "Crypto", "amount": 4.1934, "entryPrice": 86.78, "currentPrice": 86.32, "currency": "USD"},
+    {"ticker": "ETH", "name": "Ethereum", "sector": "Crypto", "amount": 0.154421, "entryPrice": 2356.55, "currentPrice": 2323.50, "currency": "USD"},
+    {"ticker": "NVDA", "name": "NVIDIA", "sector": "US", "shares": 1.792, "entryPrice": 202.13, "currentPrice": 199.88, "currency": "USD", "pending": false},
+    {"ticker": "MSFT", "name": "Microsoft", "sector": "US", "shares": 0.862, "entryPrice": 420.24, "currentPrice": 424.16, "currency": "USD", "pending": false},
+    {"ticker": "SOXX", "name": "iShares Semiconductor ETF", "sector": "US", "shares": 0.862, "entryPrice": 420.40, "currentPrice": 420.70, "currency": "USD", "pending": false},
+    {"ticker": "BDMS", "name": "Bangkok Dusit Medical", "sector": "TH", "shares": 40, "entryPrice": 250, "currentPrice": 250, "currency": "THB", "pending": false},
+    {"ticker": "AOT", "name": "Airports of Thailand", "sector": "TH", "shares": 50, "entryPrice": 200, "currentPrice": 200, "currency": "THB", "pending": false},
+    {"ticker": "CPALL", "name": "CP ALL", "sector": "TH", "shares": 125, "entryPrice": 80, "currentPrice": 80, "currency": "THB", "pending": false}
   ],
   "trades": [
     {
@@ -34,7 +34,7 @@
       "price": 86.78,
       "quantity": 4.1934,
       "reason": "Ecosystem growth + breakout",
-      "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue. Wrapped XRP launched on Solana expanding cross-chain liquidity. Outperforming majors with 8% weekly gain, breaking out of consolidation.",
+      "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue. Wrapped XRP launched on Solana expanding cross-chain liquidity.",
       "confidence": "Medium",
       "target": 110,
       "stopLoss": 75
@@ -46,18 +46,89 @@
       "price": 2356.55,
       "quantity": 0.154421,
       "reason": "Undervalued vs BTC + mean reversion",
-      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive. Largest smart contract platform trading at discount to fundamentals.",
+      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
       "confidence": "Medium",
       "target": 2800,
       "stopLoss": 2100
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "NVDA",
+      "price": 202.13,
+      "quantity": 1.792,
+      "reason": "AI chip monopoly",
+      "thesis": "Dominant GPU maker for AI training/inference. Revenue growth 65%+ YoY. Blackwell ramp driving margins. Earnings May 27 could be catalyst.",
+      "confidence": "Medium-High",
+      "target": 240,
+      "stopLoss": 175
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "price": 420.24,
+      "quantity": 0.862,
+      "reason": "Cloud + AI integration",
+      "thesis": "Azure #2 cloud, Copilot AI monetization across Office/Enterprise. Earnings April 29. Strong cash flow, defensive growth name.",
+      "confidence": "Medium-High",
+      "target": 480,
+      "stopLoss": 380
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "SOXX",
+      "price": 420.40,
+      "quantity": 0.862,
+      "reason": "Semi ETF basket",
+      "thesis": "Diversified semi exposure (NVDA, AVGO, AMD, etc.). Benefits from AI capex cycle without single-name risk. Near 52-week highs showing momentum.",
+      "confidence": "Medium",
+      "target": 480,
+      "stopLoss": 370
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "BDMS",
+      "price": 250,
+      "quantity": 40,
+      "reason": "Healthcare/medical tourism",
+      "thesis": "Thailand's largest hospital group. Medical tourism recovery tailwind. Defensive healthcare sector. SET darling with consistent dividends.",
+      "confidence": "Medium",
+      "target": 280,
+      "stopLoss": 225
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "AOT",
+      "price": 200,
+      "quantity": 50,
+      "reason": "Tourism boom",
+      "thesis": "Monopoly airport operator. Record tourist arrivals in 2025/2026. U-Tapao expansion catalyst. Strong free cash flow.",
+      "confidence": "Medium",
+      "target": 230,
+      "stopLoss": 180
+    },
+    {
+      "date": "2026-04-21",
+      "action": "BUY",
+      "ticker": "CPALL",
+      "price": 80,
+      "quantity": 125,
+      "reason": "Consumer staple",
+      "thesis": "7-Eleven Thailand operator. Defensive consumer play. 14,000+ stores with growth runway. Consistent dividend payer.",
+      "confidence": "Medium",
+      "target": 92,
+      "stopLoss": 72
     }
   ],
   "cash": 0,
-  "notes": "Stock entries lock in at Monday April 21 open. Fixed crypto amounts to match 35K THB allocation.",
+  "notes": "Entry prices corrected to real market data on April 22. US stocks at April 21 open. Thai stocks kept at approximate SET levels (price feed unavailable).",
   "history": [
     {"date": "2026-04-18", "value": 100000},
-    {"date": "2026-04-20", "value": 99103},
-    {"date": "2026-04-20", "value": 99356},
-    {"date": "2026-04-21", "value": 120892}
+    {"date": "2026-04-21", "value": 99903},
+    {"date": "2026-04-22", "value": 99951}
   ]
 }
