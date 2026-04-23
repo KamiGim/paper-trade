@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-23T02:03:04.671840+00:00",
+  "lastUpdated": "2026-04-23T10:00:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.27,
+  "usdRate": 32.42,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,7 +10,7 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 78357,
+      "currentPrice": 79200,
       "currency": "USD"
     },
     {
@@ -19,7 +19,7 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 86.4,
+      "currentPrice": 87.25,
       "currency": "USD"
     },
     {
@@ -28,7 +28,7 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2366.59,
+      "currentPrice": 2390,
       "currency": "USD"
     },
     {
@@ -37,7 +37,7 @@
       "sector": "US",
       "shares": 1.792,
       "entryPrice": 202.13,
-      "currentPrice": 202.5,
+      "currentPrice": 203.25,
       "currency": "USD",
       "pending": false
     },
@@ -47,7 +47,7 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.24,
-      "currentPrice": 432.92,
+      "currentPrice": 435.5,
       "currency": "USD",
       "pending": false
     },
@@ -57,7 +57,7 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.4,
-      "currentPrice": 431.77,
+      "currentPrice": 433.5,
       "currency": "USD",
       "pending": false
     },
@@ -67,7 +67,7 @@
       "sector": "TH",
       "shares": 40,
       "entryPrice": 250,
-      "currentPrice": 250,
+      "currentPrice": 251,
       "currency": "THB",
       "pending": false
     },
@@ -77,7 +77,7 @@
       "sector": "TH",
       "shares": 50,
       "entryPrice": 200,
-      "currentPrice": 200,
+      "currentPrice": 201,
       "currency": "THB",
       "pending": false
     },
@@ -87,7 +87,7 @@
       "sector": "TH",
       "shares": 125,
       "entryPrice": 80,
-      "currentPrice": 80,
+      "currentPrice": 81,
       "currency": "THB",
       "pending": false
     }
@@ -227,7 +227,7 @@
     },
     {
       "date": "2026-04-23",
-      "value": 101329.4
+      "value": 102540.75
     }
   ]
 }
