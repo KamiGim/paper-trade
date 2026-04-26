@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-25T03:04:00.000000+00:00",
+  "lastUpdated": "2026-04-26T03:04:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.375,
+  "usdRate": 32.368328,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,7 +10,7 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 77620,
+      "currentPrice": 77508,
       "currency": "USD"
     },
     {
@@ -19,7 +19,7 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 86.3,
+      "currentPrice": 86.22,
       "currency": "USD"
     },
     {
@@ -28,7 +28,7 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2318,
+      "currentPrice": 2314.87,
       "currency": "USD"
     },
     {
@@ -240,6 +240,10 @@
     {
       "date": "2026-04-25",
       "value": 101018.48
+    },
+    {
+      "date": "2026-04-26",
+      "value": 100960.06
     }
   ]
 }
