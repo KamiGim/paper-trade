@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-28T10:00:00.000000+00:00",
+  "lastUpdated": "2026-04-29T10:00:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.34,
+  "usdRate": 32.66,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 76582,
+      "currentPrice": 77630,
       "currency": "USD",
-      "pnlPct": 0.55
+      "pnlPct": 1.92
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 83.6,
+      "currentPrice": 85.26,
       "currency": "USD",
-      "pnlPct": -3.66
+      "pnlPct": -1.75
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2281.54,
+      "currentPrice": 2339.96,
       "currency": "USD",
-      "pnlPct": -3.18
+      "pnlPct": -0.7
     },
     {
       "ticker": "NVDA",
@@ -40,10 +40,10 @@
       "sector": "US",
       "shares": 1.792,
       "entryPrice": 202.13,
-      "currentPrice": 216.61,
+      "currentPrice": 213.17,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 7.16
+      "pnlPct": 5.46
     },
     {
       "ticker": "MSFT",
@@ -51,10 +51,10 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.24,
-      "currentPrice": 424.82,
+      "currentPrice": 429.25,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 1.09
+      "pnlPct": 2.14
     },
     {
       "ticker": "SOXX",
@@ -62,10 +62,10 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.4,
-      "currentPrice": 455.41,
+      "currentPrice": 438.71,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 8.33
+      "pnlPct": 4.36
     },
     {
       "ticker": "BDMS",
@@ -133,7 +133,7 @@
       "price": 2356.55,
       "quantity": 0.154421,
       "reason": "Undervalued vs BTC + mean reversion",
-      "thesis": "ETH/BTC ratio at multi-year lows \u2014 historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
+      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
       "confidence": "Medium",
       "target": 2800,
       "stopLoss": 2100
@@ -265,6 +265,10 @@
     {
       "date": "2026-04-28",
       "value": 80625.21
+    },
+    {
+      "date": "2026-04-29",
+      "value": 81467.36
     }
   ]
 }
