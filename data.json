@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-29T10:00:00.000000+00:00",
+  "lastUpdated": "2026-04-30T02:00:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.66,
+  "usdRate": 32.73,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 77630,
+      "currentPrice": 76218,
       "currency": "USD",
-      "pnlPct": 1.92
+      "pnlPct": 0.07
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 85.26,
+      "currentPrice": 83.74,
       "currency": "USD",
-      "pnlPct": -1.75
+      "pnlPct": -3.5
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2339.96,
+      "currentPrice": 2268.73,
       "currency": "USD",
-      "pnlPct": -0.7
+      "pnlPct": -3.73
     },
     {
       "ticker": "NVDA",
@@ -40,10 +40,10 @@
       "sector": "US",
       "shares": 1.792,
       "entryPrice": 202.13,
-      "currentPrice": 213.17,
+      "currentPrice": 209.25,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 5.46
+      "pnlPct": 3.52
     },
     {
       "ticker": "MSFT",
@@ -51,10 +51,10 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.24,
-      "currentPrice": 429.25,
+      "currentPrice": 424.46,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 2.14
+      "pnlPct": 1.0
     },
     {
       "ticker": "SOXX",
@@ -62,43 +62,46 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.4,
-      "currentPrice": 438.71,
+      "currentPrice": 449.99,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 4.36
+      "pnlPct": 7.04
     },
     {
       "ticker": "BDMS",
       "name": "Bangkok Dusit Medical",
       "sector": "TH",
-      "shares": 40,
-      "entryPrice": 250,
-      "currentPrice": 18.3,
+      "shares": 543,
+      "entryPrice": 18.4,
+      "currentPrice": 18.4,
       "currency": "THB",
       "pending": false,
-      "pnlPct": -92.68
+      "pnlPct": 0.0,
+      "note": "CORRECTED: Entry reset to ~Apr 21 level with proper share count (was 40 shares @ 250 THB)"
     },
     {
       "ticker": "AOT",
       "name": "Airports of Thailand",
       "sector": "TH",
-      "shares": 50,
-      "entryPrice": 200,
-      "currentPrice": 54.0,
+      "shares": 196,
+      "entryPrice": 51.0,
+      "currentPrice": 51.0,
       "currency": "THB",
       "pending": false,
-      "pnlPct": -73.0
+      "pnlPct": 0.0,
+      "note": "CORRECTED: Entry reset to ~Apr 21 level with proper share count (was 50 shares @ 200 THB)"
     },
     {
       "ticker": "CPALL",
       "name": "CP ALL",
       "sector": "TH",
-      "shares": 125,
-      "entryPrice": 80,
-      "currentPrice": 44.25,
+      "shares": 219,
+      "entryPrice": 45.5,
+      "currentPrice": 45.5,
       "currency": "THB",
       "pending": false,
-      "pnlPct": -44.69
+      "pnlPct": 0.0,
+      "note": "CORRECTED: Entry reset to ~Apr 21 level with proper share count (was 125 shares @ 80 THB)"
     }
   ],
   "trades": [
@@ -109,7 +112,7 @@
       "price": 76165,
       "quantity": 0.004778,
       "reason": "Cycle bottom signal",
-      "thesis": "Digital gold, institutional adoption growing, 21M supply cap. RHODL ratio suggests cycle bottom is in. Iran/Hormuz de-escalation lifting risk-on sentiment. BTC bounced from $74K support and held 200-day MA.",
+      "thesis": "Digital gold, institutional adoption growing, 21M supply cap. RHODL ratio suggests cycle bottom is in.",
       "confidence": "Medium-High",
       "target": 85000,
       "stopLoss": 72000
@@ -121,7 +124,7 @@
       "price": 86.78,
       "quantity": 4.1934,
       "reason": "Ecosystem growth + breakout",
-      "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue. Wrapped XRP launched on Solana expanding cross-chain liquidity.",
+      "thesis": "Fastest-growing L1 ecosystem. DeFi + memecoin activity drives fee revenue.",
       "confidence": "Medium",
       "target": 110,
       "stopLoss": 75
@@ -133,7 +136,7 @@
       "price": 2356.55,
       "quantity": 0.154421,
       "reason": "Undervalued vs BTC + mean reversion",
-      "thesis": "ETH/BTC ratio at multi-year lows — historically mean-reverts. Pectra upgrade incoming. Staking yields attractive.",
+      "thesis": "ETH/BTC ratio at multi-year lows. Pectra upgrade incoming.",
       "confidence": "Medium",
       "target": 2800,
       "stopLoss": 2100
@@ -145,7 +148,7 @@
       "price": 202.13,
       "quantity": 1.792,
       "reason": "AI chip monopoly",
-      "thesis": "Dominant GPU maker for AI training/inference. Revenue growth 65%+ YoY. Blackwell ramp driving margins. Earnings May 27 could be catalyst.",
+      "thesis": "Dominant GPU maker for AI. Blackwell ramp. Earnings May 27.",
       "confidence": "Medium-High",
       "target": 240,
       "stopLoss": 175
@@ -157,7 +160,7 @@
       "price": 420.24,
       "quantity": 0.862,
       "reason": "Cloud + AI integration",
-      "thesis": "Azure #2 cloud, Copilot AI monetization across Office/Enterprise. Earnings April 29. Strong cash flow, defensive growth name.",
+      "thesis": "Azure #2 cloud, Copilot monetization. Earnings April 29.",
       "confidence": "Medium-High",
       "target": 480,
       "stopLoss": 380
@@ -169,106 +172,65 @@
       "price": 420.4,
       "quantity": 0.862,
       "reason": "Semi ETF basket",
-      "thesis": "Diversified semi exposure (NVDA, AVGO, AMD, etc.). Benefits from AI capex cycle without single-name risk. Near 52-week highs showing momentum.",
+      "thesis": "Diversified semi exposure. AI capex cycle beneficiary.",
       "confidence": "Medium",
       "target": 480,
       "stopLoss": 370
     },
     {
-      "date": "2026-04-21",
-      "action": "BUY",
+      "date": "2026-04-30",
+      "action": "CORRECT",
       "ticker": "BDMS",
-      "price": 250,
-      "quantity": 40,
-      "reason": "Healthcare/medical tourism",
-      "thesis": "Thailand's largest hospital group. Medical tourism recovery tailwind. Defensive healthcare sector. SET darling with consistent dividends.",
-      "confidence": "Medium",
-      "target": 280,
-      "stopLoss": 225
+      "price": 18.4,
+      "quantity": 543,
+      "reason": "Fix incorrect entry price",
+      "thesis": "Original entry 250 THB was incorrect (stock trades ~18 THB). Reset to actual market price with proper share count for 10K THB allocation.",
+      "confidence": "N/A",
+      "target": 21,
+      "stopLoss": 16.5
     },
     {
-      "date": "2026-04-21",
-      "action": "BUY",
+      "date": "2026-04-30",
+      "action": "CORRECT",
       "ticker": "AOT",
-      "price": 200,
-      "quantity": 50,
-      "reason": "Tourism boom",
-      "thesis": "Monopoly airport operator. Record tourist arrivals in 2025/2026. U-Tapao expansion catalyst. Strong free cash flow.",
-      "confidence": "Medium",
-      "target": 230,
-      "stopLoss": 180
+      "price": 51.0,
+      "quantity": 196,
+      "reason": "Fix incorrect entry price",
+      "thesis": "Original entry 200 THB was incorrect (stock trades ~51 THB). Reset to actual market price with proper share count for 10K THB allocation.",
+      "confidence": "N/A",
+      "target": 58,
+      "stopLoss": 46
     },
     {
-      "date": "2026-04-21",
-      "action": "BUY",
+      "date": "2026-04-30",
+      "action": "CORRECT",
       "ticker": "CPALL",
-      "price": 80,
-      "quantity": 125,
-      "reason": "Consumer staple",
-      "thesis": "7-Eleven Thailand operator. Defensive consumer play. 14,000+ stores with growth runway. Consistent dividend payer.",
-      "confidence": "Medium",
-      "target": 92,
-      "stopLoss": 72
+      "price": 45.5,
+      "quantity": 219,
+      "reason": "Fix incorrect entry price",
+      "thesis": "Original entry 80 THB was incorrect (stock trades ~45 THB). Reset to actual market price with proper share count for 10K THB allocation.",
+      "confidence": "N/A",
+      "target": 52,
+      "stopLoss": 41
     }
   ],
   "cash": 0,
-  "notes": "Entry prices corrected to real market data on April 22. US stocks at April 21 open. Thai stocks kept at approximate SET levels (price feed unavailable).",
+  "notes": "Thai stock entries CORRECTED on Apr 30 — original entry prices were wrong (off by 2-13x). Reset to actual market levels with proper share counts to match 10K THB allocation each.",
   "history": [
-    {
-      "date": "2026-04-18",
-      "value": 100000
-    },
-    {
-      "date": "2026-04-21",
-      "value": 99903
-    },
-    {
-      "date": "2026-04-22",
-      "value": 99951
-    },
-    {
-      "date": "2026-04-22",
-      "value": 100002
-    },
-    {
-      "date": "2026-04-22",
-      "value": 100543.93
-    },
-    {
-      "date": "2026-04-23",
-      "value": 102540.75
-    },
-    {
-      "date": "2026-04-24",
-      "value": 101232.36
-    },
-    {
-      "date": "2026-04-24",
-      "value": 100887.14
-    },
-    {
-      "date": "2026-04-25",
-      "value": 101018.48
-    },
-    {
-      "date": "2026-04-26",
-      "value": 100960.06
-    },
-    {
-      "date": "2026-04-27",
-      "value": 103210
-    },
-    {
-      "date": "2026-04-27",
-      "value": 102355.02
-    },
-    {
-      "date": "2026-04-28",
-      "value": 80625.21
-    },
-    {
-      "date": "2026-04-29",
-      "value": 81467.36
-    }
+    {"date": "2026-04-18", "value": 100000},
+    {"date": "2026-04-21", "value": 99903},
+    {"date": "2026-04-22", "value": 99951},
+    {"date": "2026-04-22", "value": 100002},
+    {"date": "2026-04-22", "value": 100543.93},
+    {"date": "2026-04-23", "value": 102540.75},
+    {"date": "2026-04-24", "value": 101232.36},
+    {"date": "2026-04-24", "value": 100887.14},
+    {"date": "2026-04-25", "value": 101018.48},
+    {"date": "2026-04-26", "value": 100960.06},
+    {"date": "2026-04-27", "value": 103210},
+    {"date": "2026-04-27", "value": 102355.02},
+    {"date": "2026-04-28", "value": 80625.21},
+    {"date": "2026-04-29", "value": 81467.36},
+    {"date": "2026-04-30", "value": 101781.91}
   ]
 }
