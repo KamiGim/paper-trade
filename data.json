@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-30T10:00:00.000000+00:00",
+  "lastUpdated": "2026-05-01T02:00:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.57,
+  "usdRate": 32.555,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 76090,
+      "currentPrice": 76657,
       "currency": "USD",
-      "pnlPct": -0.1
+      "pnlPct": 0.65
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 83.18,
+      "currentPrice": 83.59,
       "currency": "USD",
-      "pnlPct": -4.15
+      "pnlPct": -3.68
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2262.43,
+      "currentPrice": 2266.98,
       "currency": "USD",
-      "pnlPct": -3.99
+      "pnlPct": -3.8
     },
     {
       "ticker": "NVDA",
@@ -40,10 +40,10 @@
       "sector": "US",
       "shares": 1.792,
       "entryPrice": 202.13,
-      "currentPrice": 209.25,
+      "currentPrice": 199.57,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 3.52
+      "pnlPct": -1.27
     },
     {
       "ticker": "MSFT",
@@ -51,10 +51,10 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.24,
-      "currentPrice": 424.46,
+      "currentPrice": 407.78,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 1.0
+      "pnlPct": -2.96
     },
     {
       "ticker": "SOXX",
@@ -62,10 +62,10 @@
       "sector": "US",
       "shares": 0.862,
       "entryPrice": 420.4,
-      "currentPrice": 449.99,
+      "currentPrice": 461.44,
       "currency": "USD",
       "pending": false,
-      "pnlPct": 7.04
+      "pnlPct": 9.76
     },
     {
       "ticker": "BDMS",
@@ -97,10 +97,10 @@
       "sector": "TH",
       "shares": 219,
       "entryPrice": 45.5,
-      "currentPrice": 43.75,
+      "currentPrice": 43.5,
       "currency": "THB",
       "pending": false,
-      "pnlPct": -3.85,
+      "pnlPct": -4.4,
       "note": "CORRECTED: Entry reset to ~Apr 21 level with proper share count (was 125 shares @ 80 THB)"
     }
   ],
@@ -280,6 +280,10 @@
     {
       "date": "2026-04-30b",
       "value": 100907.2
+    },
+    {
+      "date": "2026-05-01",
+      "value": 100275.15
     }
   ]
 }
