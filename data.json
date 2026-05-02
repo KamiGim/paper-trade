@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-01T10:00:00.000000+00:00",
+  "lastUpdated": "2026-05-02T03:03:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.555,
+  "usdRate": 32.538,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 77231,
+      "currentPrice": 78343,
       "currency": "USD",
-      "pnlPct": 1.40
+      "pnlPct": 2.86
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 83.93,
+      "currentPrice": 83.89,
       "currency": "USD",
-      "pnlPct": -3.28
+      "pnlPct": -3.33
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2280.7,
+      "currentPrice": 2303.37,
       "currency": "USD",
-      "pnlPct": -3.22
+      "pnlPct": -2.26
     },
     {
       "ticker": "NVDA",
