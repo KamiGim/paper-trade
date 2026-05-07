@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-07T02:00:00.000000+00:00",
+  "lastUpdated": "2026-05-07T10:00:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.23,
+  "usdRate": 32.31,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 81156,
+      "currentPrice": 80919,
       "currency": "USD",
-      "pnlPct": 6.55
+      "pnlPct": 6.24
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 88.27,
+      "currentPrice": 89.41,
       "currency": "USD",
-      "pnlPct": 1.72
+      "pnlPct": 3.03
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2326.98,
+      "currentPrice": 2327.79,
       "currency": "USD",
-      "pnlPct": -1.25
+      "pnlPct": -1.22
     },
     {
       "ticker": "NVDA",
@@ -73,10 +73,10 @@
       "sector": "TH",
       "shares": 543,
       "entryPrice": 18.4,
-      "currentPrice": 18.5,
+      "currentPrice": 18.4,
       "currency": "THB",
       "pending": false,
-      "pnlPct": 0.54
+      "pnlPct": 0.0
     },
     {
       "ticker": "AOT",
@@ -84,10 +84,10 @@
       "sector": "TH",
       "shares": 196,
       "entryPrice": 51.0,
-      "currentPrice": 51.0,
+      "currentPrice": 52.75,
       "currency": "THB",
       "pending": false,
-      "pnlPct": 0.0
+      "pnlPct": 3.43
     },
     {
       "ticker": "CPALL",
@@ -95,10 +95,10 @@
       "sector": "TH",
       "shares": 219,
       "entryPrice": 45.5,
-      "currentPrice": 43.0,
+      "currentPrice": 44.5,
       "currency": "THB",
       "pending": false,
-      "pnlPct": -5.49
+      "pnlPct": -2.2
     }
   ],
   "trades": [
@@ -236,6 +236,7 @@
     {"date": "2026-05-04", "value": 101638.27},
     {"date": "2026-05-05", "value": 101857.68},
     {"date": "2026-05-06", "value": 102637.0},
-    {"date": "2026-05-07", "value": 103056.86}
+    {"date": "2026-05-07", "value": 103056.86},
+    {"date": "2026-05-07b", "value": 103972.68}
   ]
 }
