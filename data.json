@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-09T03:04:00.000000+00:00",
+  "lastUpdated": "2026-05-10T03:02:00.000000+00:00",
   "capital": 100000,
   "currency": "THB",
-  "usdRate": 32.217,
+  "usdRate": 32.22,
   "holdings": [
     {
       "ticker": "BTC",
@@ -10,9 +10,9 @@
       "sector": "Crypto",
       "amount": 0.004778,
       "entryPrice": 76165,
-      "currentPrice": 80376,
+      "currentPrice": 80747,
       "currency": "USD",
-      "pnlPct": 5.53
+      "pnlPct": 6.02
     },
     {
       "ticker": "SOL",
@@ -20,9 +20,9 @@
       "sector": "Crypto",
       "amount": 4.1934,
       "entryPrice": 86.78,
-      "currentPrice": 93.45,
+      "currentPrice": 93.01,
       "currency": "USD",
-      "pnlPct": 7.69
+      "pnlPct": 7.18
     },
     {
       "ticker": "ETH",
@@ -30,9 +30,9 @@
       "sector": "Crypto",
       "amount": 0.154421,
       "entryPrice": 2356.55,
-      "currentPrice": 2315.5,
+      "currentPrice": 2326.86,
       "currency": "USD",
-      "pnlPct": -1.74
+      "pnlPct": -1.26
     },
     {
       "ticker": "NVDA",
@@ -212,7 +212,7 @@
     }
   ],
   "cash": 0,
-  "notes": "Thai stock entries CORRECTED on Apr 30 \u2014 original entry prices were wrong (off by 2-13x). Reset to actual market levels with proper share counts to match 10K THB allocation each.",
+  "notes": "Thai stock entries CORRECTED on Apr 30 — original entry prices were wrong (off by 2-13x). Reset to actual market levels with proper share counts to match 10K THB allocation each.",
   "history": [
     {
       "date": "2026-04-18",
@@ -313,6 +313,10 @@
     {
       "date": "2026-05-09",
       "value": 103312.4
+    },
+    {
+      "date": "2026-05-10",
+      "value": 203922.72
     }
   ]
 }
